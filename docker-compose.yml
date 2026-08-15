@@ -1,7 +1,7 @@
 services:
   # 1. SQL SERVER VERİTABANI
   shiftflow-db:
-    image: shiftflow-db:latest
+    image: mcr.microsoft.com/mssql/server:2022-latest
     container_name: shiftflow_db
     environment:
       - ACCEPT_EULA=Y
