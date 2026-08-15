@@ -1,0 +1,16 @@
+services:
+  # 1. SQL SERVER VERİTABANI
+  shiftflow-db:
+    image: shiftflow-db:latest
+    container_name: shiftflow_db
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=${MSSQL_SA_PASSWORD}
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqldata:/var/opt/mssql/data
+    restart: always
+
+volumes:
+  sqldata:

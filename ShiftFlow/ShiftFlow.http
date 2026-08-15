@@ -1,0 +1,6 @@
+@ShiftFlow_HostAddress = http://localhost:5016
+
+GET {{ShiftFlow_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

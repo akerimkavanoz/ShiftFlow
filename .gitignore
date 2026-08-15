@@ -1,0 +1,36 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# .NET Build & Output
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
+
+# Node.js & Frontend
+node_modules/
+dist/
+dist-ssr/
+build/
+
+# Environment & Sensitive Settings
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+appsettings.Development.json
+
+# Docker & Database Backups
+*.tar
+*.bak
+*.mdf
+*.ldf
+
+# OS Files
+.DS_Store
+Thumbs.db
