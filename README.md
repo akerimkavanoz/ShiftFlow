@@ -22,7 +22,7 @@ Projeyi bilgisayarınıza indirip backend ve frontend çevre değişkenleri, ver
    Backend projesinin bulunduğu `ShiftFlow` klasöründeki `appsettings.json` dosyasını açın. `ConnectionStrings` kısmındaki şifrenin `.env` dosyasına yazdığınız şifreyle eşleştiğinden emin olun:
    
        "ConnectionStrings": {
-         "DefaultConnection": "Server=localhost;Database=ShiftFlowDb;User Id=sa;Password=GucluSifreniz123!;TrustServerCertificate=True;"
+         "SqlServer": "Server=localhost;Database=ShiftFlowDb;User Id=sa;Password=GucluSifreniz123!;TrustServerCertificate=True;"
        }
 
 3. **Veritabanını Başlatın:**
@@ -35,7 +35,7 @@ Projeyi bilgisayarınıza indirip backend ve frontend çevre değişkenleri, ver
 4. **Veritabanı Migration ve Tablolarını Oluşturun:**
    Backend projesinin bulunduğu `ShiftFlow` klasörüne girin. Sunucuda `ShiftFlowDb` adında bir veritabanı henüz yoksa, EF Core otomatik olarak veritabanını oluşturacak ve ardından hazır migration'ları işleyerek tüm tabloları kuracaktır. Bunun için şu komutu çalıştırın:
    
-       dotnet ef database update
+       update-database
 
 5. **Backend'i Başlatın:**
    Aynı klasörde terminal üzerinden backend sunucusunu ayağa kaldırın:
